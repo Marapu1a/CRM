@@ -1,22 +1,23 @@
 {
-  "builds": [
-    {
-      "src": "crm-backend/index.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "crm-frontend/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/crm-backend/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/crm-frontend/$1"
-    }
-  ]
-}
+    "builds": [
+      {
+        "src": "crm-backend/index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "crm-frontend/*",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/crm-backend/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/crm-frontend/$1"
+      }
+    ]
+  }
+  
