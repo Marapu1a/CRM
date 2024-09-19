@@ -2,12 +2,12 @@
   "name": "crm-backend",
   "version": "1.0.0",
   "description": "CRM backend",
-  "main": "index.js",  // Указывает, что точкой входа является index.js
+  "main": "index.js", 
   "scripts": {
-    "start": "node index.js"  // Скрипт для запуска сервера
+    "start": "node index.js"
   },
   "dependencies": {
-    "sqlite3": "^5.1.7",  // SQLite зависимость
-    "express": "^4.17.1"  // Можно добавить express, если он используется
+    "sqlite3": "^5.1.7", 
+    "express": "^4.17.1"
   }
 }
